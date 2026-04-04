@@ -185,25 +185,15 @@ data:extend({
 			smoke = {
 				{
 					name = "smoke",
-					frequency = 15,
+					frequency = 13,
 					north_position = { 0.85, -2.7 },
 					south_position = { 0.85, -2.7 },
 					east_position = { 0.85, -2.7 },
 					west_position = { 0.85, -2.7 },
-					starting_vertical_speed = 0.06,
+					starting_vertical_speed = 0.08,
 					starting_frame_deviation = 60,
 				},
 			},
-			-- need to fix position on rotation
-			--			smoke = {
-			--				{
-			--					name = "smoke",
-			--					frequency = 10,
-			--					position = { -3.1, -1.1 },
-			--					starting_vertical_speed = 0.18, --base 0.08
-			--					starting_frame_deviation = 60,
-			--				},
-			--			},
 			emissions_per_minute = { pollution = 12 }, --12 is burner drill
 		},
 
@@ -257,8 +247,8 @@ data:extend({
 						height = 81,
 						frame_count = 48,
 						draw_as_glow = true,
-						shift = util.by_pixel(-2.1, 9),
-						scale = 0.8,
+						shift = util.by_pixel(-2.4, 9),
+						scale = 0.7,
 					},
 				},
 

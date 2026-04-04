@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-04-04
+  Changes:
+    - reduced smoke particles a bit
+    - changed size and location of fire when calciner is working to make it look better
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2026-04-03
   Changes:
