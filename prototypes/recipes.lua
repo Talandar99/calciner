@@ -11,7 +11,7 @@ data:extend({
 		name = "calciner-wood-carbonization",
 		icon = "__calciner__/graphics/wood-carbonization.png",
 		enabled = false,
-		energy_required = 6,
+		energy_required = 4.5,
 		allow_productivity = true,
 		ingredients = {
 			{ type = "item", name = "wood", amount = 2 },
@@ -124,7 +124,7 @@ if mods["space-age"] then
 			icon = "__calciner__/graphics/coal-purification.png",
 			enabled = false,
 			allow_productivity = true,
-			energy_required = 5,
+			energy_required = 6,
 			ingredients = {
 				{ type = "item", name = "coal", amount = 2 },
 			},

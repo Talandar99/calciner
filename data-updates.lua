@@ -15,7 +15,7 @@ if mods["pelagos"] then
 			name = "calciner-coconut-husk-carbonization",
 			icon = "__calciner__/graphics/coconut-husk-carbonization.png",
 			enabled = false,
-			energy_required = 6,
+			energy_required = 4.5,
 			allow_productivity = true,
 			ingredients = {
 				{ type = "item", name = "coconut-husk", amount = 4 },

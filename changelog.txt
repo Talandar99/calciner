@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-04-25
+  Balancing:
+    - adjusted crafting times on activated carbon chain so ratio for 3 calciners processing in chain is now 1:1:1 
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2026-04-04
   Changes:
