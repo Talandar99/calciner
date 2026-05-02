@@ -10,7 +10,11 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "calciner-advanced-steel-smelting" },
 			{ type = "unlock-recipe", recipe = "activated-carbon" },
 		},
-		prerequisites = { "concrete", "advanced-material-processing", "chemical-science-pack" },
+		prerequisites = {
+			"concrete",
+			"chemical-science-pack",
+			"advanced-material-processing-2",
+		},
 		unit = {
 			count = 500,
 			ingredients = {
