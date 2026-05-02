@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.0
+Version: 0.4.0
 Date: 2026-05-02
   Balancing:
-    - By default calciner now require adjusted material processing 2 to be unlocked first
+    - By default calciner now require adjusted material processing 2 to be unlocked first 
+      (Electric Furnace)
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2026-04-25
