@@ -114,28 +114,6 @@ if tech and mods["space-age"] then
 	})
 end
 
-if tech and mods["pelagos"] then
-	table.insert(tech.effects, {
-		type = "unlock-recipe",
-		recipe = "calciner-coconut-husk-carbonization",
-	})
-	table.insert(tech.effects, {
-		type = "unlock-recipe",
-		recipe = "diesel-mining-drill",
-	})
-	tech.prerequisites = {
-		--"diesel-mining-drill",
-		--"advanced-material-processing", -- important for any planet start
-		"concrete",
-		"canex-excavator",
-	}
-	tech.research_trigger = {
-		type = "build-entity",
-		entity = "canex-excavator",
-	}
-	tech.order = "ea[pelagos]"
-end
-
 if tech and data.raw.recipe["calciner-mineral-glass"] then
 	table.insert(tech.effects, {
 		type = "unlock-recipe",
