@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2026-06-01
+  Changes:
+    - removed dedicated tech tree changes for pelagos
+    - added mechanism to copy all recipes from electric furnace for better compat with mods that 
+      add additional categories to electric furnace
+    - Space Exploration: added klin recipe category to calciner if SE is installed
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2026-05-02
   Balancing:
