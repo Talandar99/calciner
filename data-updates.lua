@@ -128,3 +128,10 @@ if tech and data.raw.recipe["calciner-mineral-glass"] then
 		recipe = "calciner-mineral-glass",
 	})
 end
+local crafting_categories = table.deepcopy(data.raw["furnace"]["electric-furnace"].crafting_categories)
+table.insert(crafting_categories, "smelting")
+table.insert(crafting_categories, "calcining")
+if mods["space-exploration"] then
+	table.insert(crafting_categories, "kiln")
+end
+data.raw["assembling-machine"]["calciner"].crafting_categories = crafting_categories
