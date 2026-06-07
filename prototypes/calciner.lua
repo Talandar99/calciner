@@ -163,6 +163,7 @@ data:extend({
 		result_inventory_size = 1,
 		source_inventory_size = 1,
 		crafting_speed = 4,
+		make_space_diesel_variant = true,
 		energy_usage = "1MW",
 		energy_source = {
 			type = "fluid",
