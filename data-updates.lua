@@ -1,13 +1,13 @@
 if mods["pelagos"] then
-	data.raw["item"]["calciner"].default_import_location = "pelagos"
-	table.insert(data.raw["recipe"]["calciner"].ingredients, { type = "item", name = "coconut-sealant", amount = 20 })
-	data.raw["recipe"]["calciner"].surface_conditions = {
-		{
-			property = "pressure",
-			min = 1809,
-			max = 1809,
-		},
-	}
+	--data.raw["item"]["calciner"].default_import_location = "pelagos"
+	--table.insert(data.raw["recipe"]["calciner"].ingredients, { type = "item", name = "coconut-sealant", amount = 20 })
+	--data.raw["recipe"]["calciner"].surface_conditions = {
+	--	{
+	--		property = "pressure",
+	--		min = 1809,
+	--		max = 1809,
+	--	},
+	--}
 	data:extend({
 		{
 			type = "recipe",
