@@ -1,17 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.7.0
-Date: 2026-06-07
-  Changes:
-    - calciner compatibility with pelagos changes were moved to pelagos
----------------------------------------------------------------------------------------------------
-Version: 0.6.0
-Date: 2026-06-07
-  Changes:
-    - added support for space diesel
----------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2026-06-01
   Changes:
+    - added support for space diesel
+    - calciner compatibility with pelagos changes were moved to pelagos
     - removed dedicated tech tree changes for pelagos
     - added mechanism to copy all recipes from electric furnace for better compat with mods that 
       add additional categories to electric furnace
