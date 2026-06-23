@@ -11,6 +11,7 @@ Date: 2026-06-23
     - Updated calciner to work with factorio 2.1.0
   Graphics:
     - Refreshed calciner sprite and animations
+    - Updated technology icon
     - Updated thumbnail
     - New remnants sprite
     - Replaced generated activated carbon item icon with one made in Blender
