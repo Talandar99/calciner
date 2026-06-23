@@ -122,7 +122,7 @@ data:extend({
 
 		type = "item",
 		name = "calciner",
-		icon = "__calciner__/graphics/calciner64.png",
+		icon = "__calciner__/graphics/calciner_64.png",
 		icon_size = 64,
 		subgroup = "smelting-machine",
 		order = "cd[calciner]",
@@ -133,7 +133,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "calciner",
-		icon = "__calciner__/graphics/calciner64.png",
+		icon = "__calciner__/graphics/calciner_64.png",
 		flags = { "placeable-neutral", "placeable-player", "player-creation" },
 		minable = { mining_time = 0.2, result = "calciner" },
 		fast_replaceable_group = "furnace",
@@ -171,7 +171,7 @@ data:extend({
 			scale_fluid_usage = true,
 			fluid_box = {
 				pipe_covers = calcinerpipecoverspictures(),
-				pipe_picture = calcinerpipepictures(),
+				--pipe_picture = calcinerpipepictures(),
 				always_draw_covers = true,
 				volume = 100,
 				pipe_connections = {
@@ -215,24 +215,89 @@ data:extend({
 		},
 		graphics_set = {
 			animation = {
-				layers = {
-					{
-
-						filename = "__calciner__/graphics/calciner512.png",
-						priority = "high",
-						width = 512,
-						height = 512,
-						shift = util.by_pixel(0, -24),
-						scale = 0.285,
+				north = {
+					layers = {
+						{
+							filename = "__calciner__/graphics/calciner_vertical_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							shift = util.by_pixel(0, 0),
+							scale = 0.34,
+						},
+						{
+							filename = "__calciner__/graphics/calciner_shadow_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							draw_as_shadow = true,
+							shift = util.by_pixel(55.5, 0),
+							scale = 0.34,
+						},
 					},
-					{
-						filename = "__base__/graphics/entity/electric-furnace/electric-furnace-shadow.png",
-						priority = "high",
-						width = 227,
-						height = 171,
-						draw_as_shadow = true,
-						shift = util.by_pixel(11.25, 7.75),
-						scale = 0.5,
+				},
+				east = {
+					layers = {
+						{
+							filename = "__calciner__/graphics/calciner_horizontal_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							shift = util.by_pixel(0, 0),
+							scale = 0.34,
+						},
+						{
+							filename = "__calciner__/graphics/calciner_shadow_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							draw_as_shadow = true,
+							shift = util.by_pixel(55.5, 0),
+							scale = 0.34,
+						},
+					},
+				},
+				south = {
+					layers = {
+						{
+							filename = "__calciner__/graphics/calciner_vertical_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							shift = util.by_pixel(0, 0),
+							scale = 0.34,
+						},
+
+						{
+							filename = "__calciner__/graphics/calciner_shadow_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							draw_as_shadow = true,
+							shift = util.by_pixel(55.5, 0),
+							scale = 0.34,
+						},
+					},
+				},
+				west = {
+					layers = {
+						{
+							filename = "__calciner__/graphics/calciner_horizontal_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							shift = util.by_pixel(0, 0),
+							scale = 0.34,
+						},
+						{
+							filename = "__calciner__/graphics/calciner_shadow_658.png",
+							priority = "high",
+							width = 658,
+							height = 658,
+							draw_as_shadow = true,
+							shift = util.by_pixel(55.5, 0),
+							scale = 0.34,
+						},
 					},
 				},
 			},
@@ -248,21 +313,20 @@ data:extend({
 						height = 81,
 						frame_count = 48,
 						draw_as_glow = true,
-						shift = util.by_pixel(-2.4, 9),
+						shift = util.by_pixel(-3.5, 19),
 						scale = 0.7,
 					},
 				},
-
 				{
 					fadeout = true,
 					effect = "flicker",
 					animation = {
-						filename = "__calciner__/graphics/calciner512-working.png",
+						filename = "__calciner__/graphics/calciner_vertical_658_glow.png",
 						priority = "high",
-						width = 512,
-						height = 512,
-						shift = util.by_pixel(0, -24),
-						scale = 0.285,
+						width = 658,
+						height = 658,
+						shift = util.by_pixel(0, 0),
+						scale = 0.34,
 						line_length = 1,
 						draw_as_glow = true,
 						blend_mode = "additive",
@@ -299,7 +363,7 @@ data:extend({
 	{
 		type = "corpse",
 		name = "calciner-remnants",
-		icon = "__calciner__/graphics/calciner64.png",
+		icon = "__calciner__/graphics/calciner_64.png",
 		flags = { "placeable-neutral", "building-direction-8-way", "not-on-map" },
 		hidden_in_factoriopedia = true,
 		subgroup = "smelting-machine-remnants",
@@ -313,13 +377,13 @@ data:extend({
 		final_render_layer = "remnants",
 		remove_on_tile_placement = false,
 		animation = {
-			filename = "__calciner__/graphics/calciner-remnants.png",
+			filename = "__calciner__/graphics/calciner_remnants_658.png",
 			line_length = 1,
-			width = 454,
-			height = 448,
+			width = 658,
+			height = 658,
 			direction_count = 1,
-			shift = util.by_pixel(-3.25, 7.25),
-			scale = 0.5,
+			shift = util.by_pixel(0, 0),
+			scale = 0.34,
 		},
 	},
 })
@@ -328,7 +392,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "calciner",
-		category = "advanced-crafting",
+		categories = { "advanced-crafting" },
 		enabled = false,
 		ingredients = {
 			{ type = "item", name = "pipe", amount = 40 },

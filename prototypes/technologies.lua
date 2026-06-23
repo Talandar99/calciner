@@ -2,8 +2,8 @@ data:extend({
 	{
 		type = "technology",
 		name = "calciner",
-		icon = "__calciner__/graphics/calciner512.png",
-		icon_size = 512,
+		icon = "__calciner__/graphics/calciner_technology_480.png",
+		icon_size = 480,
 		effects = {
 			{ type = "unlock-recipe", recipe = "calciner" },
 			{ type = "unlock-recipe", recipe = "calciner-wood-carbonization" },

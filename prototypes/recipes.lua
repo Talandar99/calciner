@@ -7,7 +7,7 @@ data:extend({
 data:extend({
 	{
 		type = "recipe",
-		category = "calcining",
+		categories = { "calcining" },
 		name = "calciner-wood-carbonization",
 		icon = "__calciner__/graphics/wood-carbonization.png",
 		enabled = false,
@@ -22,8 +22,11 @@ data:extend({
 	{
 		type = "recipe",
 		name = "calciner-advanced-steel-smelting",
-		icon = "__calciner__/graphics/calciner-advanced-steel-smelting.png",
-		category = "calcining",
+		icons = {
+			{ icon = "__calciner__/graphics/activated-carbon.png", icon_size = 64 },
+			{ icon = "__base__/graphics/icons/steel-plate.png", icon_size = 64 },
+		},
+		categories = { "calcining" },
 		enabled = false,
 		energy_required = 16,
 		ingredients = {
@@ -37,7 +40,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "activated-carbon",
-		category = "calcining",
+		categories = { "calcining" },
 		enabled = false,
 		energy_required = 8,
 		allow_productivity = true,
@@ -47,35 +50,15 @@ data:extend({
 		results = { { type = "item", name = "activated-carbon", amount = 1 } },
 		auto_recycle = false,
 	},
-
-	--	{
-	--		type = "recipe",
-	--		name = "scrap-burning",
-	--		icon = "__pelagos__/graphics/calciner-advanced-steel-smelting.png",
-	--		category = "calcining",
-	--		enabled = false,
-	--		energy_required = 6,
-	--		ingredients = {
-	--			{ type = "item", name = "scrap", amount = 1 },
-	--		},
-	--		results = {
-	--			{ type = "item", name = "iron-gear-wheel", probability = 0.20 },
-	--			{ type = "item", name = "concrete", probability = 0.06 },
-	--			{ type = "item", name = "steel-plate", probability = 0.04 },
-	--			{ type = "item", name = "stone", probability = 0.04 },
-	--			{ type = "item", name = "copper-cable", probability = 0.03 },
-	--			{ type = "item", name = "holmium-org", probability = 0.01 },
-	--		},
-	--		allow_productivity = true,
-	--	},
 })
 
 if mods["space-age"] then
 	data:extend({
 		{
 			type = "recipe",
-			category = "calcining",
+			categories = { "calcining" },
 			name = "calciner-fish-calcining",
+
 			icon = "__calciner__/graphics/fish-calcining.png",
 			enabled = false,
 			allow_productivity = true,
@@ -93,7 +76,7 @@ if mods["space-age"] then
 				{ icon = "__base__/graphics/icons/stone-brick.png", icon_size = 64 },
 				{ icon = "__space-age__/graphics/icons/calcite.png", icon_size = 64, scale = 0.3, shift = { 8, 8 } },
 			},
-			category = "calcining",
+			categories = { "calcining" },
 			enabled = false,
 			energy_required = 4,
 			ingredients = {
@@ -107,7 +90,7 @@ if mods["space-age"] then
 		{
 			type = "recipe",
 			name = "activated-carbon",
-			category = "calcining",
+			categories = { "calcining" },
 			enabled = false,
 			energy_required = 8,
 			allow_productivity = true,
@@ -119,7 +102,7 @@ if mods["space-age"] then
 		},
 		{
 			type = "recipe",
-			category = "calcining",
+			categories = { "calcining" },
 			name = "calciner-coal-purification",
 			icon = "__calciner__/graphics/coal-purification.png",
 			enabled = false,

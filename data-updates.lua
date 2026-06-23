@@ -13,7 +13,13 @@ if mods["pelagos"] then
 			type = "recipe",
 			category = "calcining",
 			name = "calciner-coconut-husk-carbonization",
-			icon = "__calciner__/graphics/coconut-husk-carbonization.png",
+			icons = {
+				{
+					icon = "__pelagos__/graphics/coconut-husk.png",
+					icon_size = 64,
+					tint = { r = 0.3, g = 0.3, b = 0.3, a = 1 },
+				},
+			},
 			enabled = false,
 			energy_required = 4.5,
 			allow_productivity = true,
