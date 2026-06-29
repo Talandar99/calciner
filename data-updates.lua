@@ -11,7 +11,7 @@ if mods["pelagos"] then
 	data:extend({
 		{
 			type = "recipe",
-			category = "calcining",
+			categories = {"calcining"},
 			name = "calciner-coconut-husk-carbonization",
 			icons = {
 				{
@@ -40,7 +40,7 @@ if mods["space-age"] then
 			{
 				type = "recipe",
 				name = "calciner-mineral-glass",
-				category = "calcining",
+				categories = {"calcining"},
 				ingredients = {
 					{ type = "item", name = "calcite", amount = 4 },
 				},
@@ -68,7 +68,7 @@ if mods["space-age"] then
 			{
 				type = "recipe",
 				name = "calciner-mineral-glass",
-				category = "calcining",
+				categories = {"calcining"},
 				ingredients = {
 					{ type = "item", name = "calcite", amount = 4 },
 				},
