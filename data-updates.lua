@@ -11,7 +11,7 @@ if mods["pelagos"] then
 	data:extend({
 		{
 			type = "recipe",
-			category = "calcining",
+			categories = { "calcining" },
 			name = "calciner-coconut-husk-carbonization",
 			icons = {
 				{
@@ -40,7 +40,7 @@ if mods["space-age"] then
 			{
 				type = "recipe",
 				name = "calciner-mineral-glass",
-				category = "calcining",
+				categories = { "calcining" },
 				ingredients = {
 					{ type = "item", name = "calcite", amount = 4 },
 				},
@@ -68,7 +68,7 @@ if mods["space-age"] then
 			{
 				type = "recipe",
 				name = "calciner-mineral-glass",
-				category = "calcining",
+				categories = { "calcining" },
 				ingredients = {
 					{ type = "item", name = "calcite", amount = 4 },
 				},
@@ -134,7 +134,8 @@ if tech and data.raw.recipe["calciner-mineral-glass"] then
 		recipe = "calciner-mineral-glass",
 	})
 end
-local crafting_categories = table.deepcopy(data.raw["furnace"]["electric-furnace"].crafting_categories)
+local electric_furnace = data.raw["furnace"]["electric-furnace"] or data.raw["assembling-machine"]["electric-furnace"]
+local crafting_categories = table.deepcopy(electric_furnace.crafting_categories)
 table.insert(crafting_categories, "smelting")
 table.insert(crafting_categories, "calcining")
 if mods["space-exploration"] then
