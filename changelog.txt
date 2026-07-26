@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 2026-07-04
+Date: 2026-07-27
   Changes:
     - THIS VERSION OF THE MOD CONTAIN CHANGES THAT WILL BREAK EXISTING
       FACTORIES. 
