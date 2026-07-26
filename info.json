@@ -1,10 +1,10 @@
 {
     "name": "calciner",
-    "version": "0.5.1",
+    "version": "1.0.0",
     "title": "Calciner",
     "author": "Talandar",
     "dependencies": [
-        "diesel_engine"
+        "diesel_engine >= 1.0.0"
     ],
     "description": "Liquid fuel powered furnace. Allows the high-temperature purification and transformation of raw resources into refined minerals",
     "factorio_version": "2.1"
