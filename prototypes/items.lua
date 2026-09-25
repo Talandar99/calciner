@@ -5,7 +5,7 @@ data:extend({
 		name = "activated-carbon",
 		icon = "__calciner__/graphics/activated-carbon.png",
 		fuel_value = "1MJ",
-		fuel_category = "chemical",
+		fuel_categories = { "chemical" },
 		subgroup = "raw-material",
 		order = "b[chemistry]-f[carbon-activated]",
 		inventory_move_sound = item_sounds.resource_inventory_move,
